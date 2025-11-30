@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
       value: SystemUiOverlayStyle(
         statusBarColor: Theme.of(
           context,
-        ).colorScheme.surface, // FIXES TOP STRIP
+        ).colorScheme.surface, 
         statusBarIconBrightness: context.watch<ThemeProvider>().isDark
             ? Brightness.light
             : Brightness.dark,
@@ -28,12 +28,12 @@ class HomePage extends StatelessWidget {
         extendBodyBehindAppBar: false,
 
         appBar: AppBar(
-          toolbarHeight: 72, // 🔥 Increased height
+          toolbarHeight: 72,
           backgroundColor: Theme.of(context).colorScheme.surface,
           surfaceTintColor: Colors.transparent,
           elevation: 1,
           shadowColor: Colors.black12,
-          forceMaterialTransparency: false, // 🔥 FULLY OPAQUE APPBAR
+          forceMaterialTransparency: false,
 
           title: Padding(
             padding: const EdgeInsets.only(left: 4),
