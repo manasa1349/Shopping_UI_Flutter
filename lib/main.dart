@@ -11,7 +11,7 @@ void main() {
       providers: [
         ChangeNotifierProvider(create: (_) => ProductProvider()),
         ChangeNotifierProvider(create: (_) => CartProvider()),
-        ChangeNotifierProvider(create: (_) => ThemeProvider()), // DARK MODE
+        ChangeNotifierProvider(create: (_) => ThemeProvider()), 
       ],
       child: const ShoppingApp(),
     ),
